@@ -34,6 +34,7 @@ public class InputFile {
         try {
             s = in.readLine();
         } catch (IOException e) {
+
             throw  new RuntimeException("调用失败");
         }
         return s;
