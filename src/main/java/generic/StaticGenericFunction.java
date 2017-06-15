@@ -1,6 +1,9 @@
 package generic;
 
 /**
+ * 静态方法
+ * 不能使用类上的泛型
+ * 使用泛型 只能使用泛型方法
  * Created by forever on 2017-6-13.
  */
 public class StaticGenericFunction<T> {
