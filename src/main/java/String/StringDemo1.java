@@ -1,4 +1,4 @@
-package String.String类;
+package String;
 
 import org.junit.Test;
 
