@@ -27,7 +27,7 @@ public class MatchPattern {
             String str = matcher.group();
             int start = matcher.start();
             int end = matcher.end();
-            System.out.println(str+"..........."+start+"-----"+);
+            System.out.println(str+"..........."+start+"-----");
         }
 
     }

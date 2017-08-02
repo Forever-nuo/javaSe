@@ -21,6 +21,14 @@ public class StringRegular {
     }
 
 
+    @Test
+    public void testMatches1() {
+        String content = "ct_weetable,";
+        String regex = "ct_.*(\\d*)2,";
+        System.out.println(content.matches(regex));
+    }
+
+
     /**
      * 切割字符串
      */
