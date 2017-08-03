@@ -27,6 +27,8 @@ public class SetDemo {
          * 只能通过 foreach 循环
          * 和Iterator获取元素
          */
+
+        System.out.println(set);
         for (String s : set) {
             System.out.println(s);
         }
@@ -34,5 +36,18 @@ public class SetDemo {
         for (Iterator<String> iterator = set.iterator();iterator.hasNext();){
             System.out.println(iterator.next());
         }
+    }
+
+    /***
+     * set的打印
+     * set的toString方法
+     */
+    @Test
+    public void testPrintSet() {
+        Set<String> set = new HashSet<>();
+        set.add("222");
+        set.add("张三");
+        set.add("王五");
+        System.out.println(set);
     }
 }
