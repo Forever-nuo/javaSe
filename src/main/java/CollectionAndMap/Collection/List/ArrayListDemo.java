@@ -1,10 +1,11 @@
 package CollectionAndMap.Collection.List;
 
 import org.junit.Test;
-import sun.awt.datatransfer.DataTransferer;
-import sun.java2d.pipe.SpanIterator;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Created by forever on 2017-6-8.
@@ -72,6 +73,25 @@ public class ArrayListDemo {
             }
         }
         System.out.println(list1);
+    }
+
+    /***
+     * 情况1:集合a{a,b,c} 集合b{a,b} true
+     * 情况2:集合a{a,b,c} 集合b{a,d} false
+     * 情况3:集合a{a,b,c} 集合b{a,b,c,d} false
+     */
+    @Test
+    public void testContainsAll() {
+        List<String> list1 = new ArrayList<>();
+        list1.add("A");
+        list1.add("B");
+        list1.add("C");
+
+        List<String> list2 = new ArrayList<>();
+        list2.add("B");
+        list2.add("C");
+
+        System.out.println(list1.containsAll(list2));
     }
 }
 

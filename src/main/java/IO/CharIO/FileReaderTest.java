@@ -2,11 +2,7 @@ package IO.CharIO;
 
 import org.junit.Test;
 
-import javax.annotation.processing.Filer;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.TreeSet;
+import java.io.*;
 
 /**
  * Created by forever on 2017-6-21.
@@ -24,6 +20,9 @@ public class FileReaderTest {
          * 并且 和 要读取的源文件关联
          */
         FileReader fr = new FileReader("F:\\java.txt");
+
+
+        PrintWriter pw = new PrintWriter("F:\\java.txt");
 
     }
 

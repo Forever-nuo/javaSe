@@ -1,6 +1,7 @@
 package net.URIURL;
 
-import org.testng.annotations.Test;
+
+import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
