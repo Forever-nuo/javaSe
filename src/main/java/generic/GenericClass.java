@@ -71,5 +71,12 @@ class Utils<T> {
     T getObject() {
         return t;
     }
+
+
+    public void test1() {
+
+
+
+    }
 }
 

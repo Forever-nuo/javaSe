@@ -9,10 +9,10 @@ import java.util.Objects;
  */
 @Data
 public class Person implements  Comparable {
-    private int age;
+    private Integer age;
     private String name;
 
-    public Person(int age, String name) {
+    public Person(Integer age, String name) {
         this.age = age;
         this.name = name;
     }

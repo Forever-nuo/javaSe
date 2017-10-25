@@ -2,10 +2,7 @@ package CollectionAndMap.Collection.List;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by forever on 2017-6-8.
@@ -25,8 +22,6 @@ public class ArrayListDemo {
         list.add("java1");
         list.add("java2");
         Set set = new HashSet(list);
-
-
     }
 
 
@@ -60,15 +55,15 @@ public class ArrayListDemo {
     @Test
     public void testRemoveSame2() {
         List<Person> list = new ArrayList<>();
-        list.add(new Person("张三1",35));
-        list.add(new Person("张三2",36));
-        list.add(new Person("张三3",37));
-        list.add(new Person("张三1",35));
-        list.add(new Person("张三3",35));
+        list.add(new Person("张三1", 35));
+        list.add(new Person("张三2", 36));
+        list.add(new Person("张三3", 37));
+        list.add(new Person("张三1", 35));
+        list.add(new Person("张三3", 35));
 
         List<Person> list1 = new ArrayList<>();
         for (Person person : list) {
-            if(!list1.contains(person)){
+            if (!list1.contains(person)) {
                 list1.add(person);
             }
         }
@@ -93,6 +88,72 @@ public class ArrayListDemo {
 
         System.out.println(list1.containsAll(list2));
     }
+
+
+    /**
+     * addNull
+     */
+    @Test
+    public void testAddNullToList() {
+        List<String> nameList = new ArrayList<>();
+        nameList.add("name1");
+        nameList.add(null);
+        nameList.add("name1");
+        nameList.add(null);
+        nameList.add(null);
+
+        System.out.println(11);
+    }
+
+
+    @Test
+    public void testRemoveNullFromList() {
+        List<String> nameList = new ArrayList<>();
+        nameList.add("name1");
+        nameList.add(null);
+        nameList.add("name1");
+        nameList.add(null);
+        nameList.add(null);
+
+
+        //移除list中的null值 方式1
+
+
+  /*      for (ListIterator<String> stringListIterator = nameList.listIterator(); stringListIterator.hasNext(); ) {
+            String next = stringListIterator.next();
+            if (next == null) {
+                stringListIterator.remove();
+            }
+        }*/
+
+        //方式2
+        List<String> nullList = new ArrayList<>();
+        nullList.add(null);
+
+        nameList.removeAll(nullList);
+
+
+        System.out.println(11);
+    }
+
+
+    @Test
+    public void testIsNullList() {
+        List<String> nameList = new ArrayList<>();
+
+        nameList.add(null);
+
+        nameList.add(null);
+        nameList.add(null);
+
+        if (nameList!=null&&nameList.size()>0){
+            System.out.println(1111);
+        }
+
+        System.out.println(11);
+    }
+
+
 }
 
 
