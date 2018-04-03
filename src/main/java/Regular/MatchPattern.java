@@ -1,6 +1,8 @@
 package Regular;
 
-import org.testng.annotations.Test;
+
+
+import org.junit.Test;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

@@ -1,6 +1,6 @@
 package Regular;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 /**
  * Created by forever on 2017-7-12.
